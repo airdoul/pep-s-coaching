@@ -1,0 +1,111 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    font-family: "Roboto";
+}
+
+h1 {
+    text-align: center;
+    font-size: 64px;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    text-align: center;
+}
+
+.btn {
+    padding: 0.5rem;
+    border: solid 1px #FF4676;
+    border-radius: 2px;
+    text-transform: uppercase;
+    color: #FF4676;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+/* Debut Header */
+.header {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    gap: 1rem;
+}
+/* Fin Header */
+
+/* Debut Heroe */
+.heroe {
+    background-image: url(../img/photo-1556139943-4bdca53adf1e\ 1.jpg);
+    background-size: cover;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-contact {
+    color: white;
+    background-color: #FF4676;
+}
+/* Fin Heroe */
+
+/* Debut Section approche */
+.approches {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.approche {
+    display: inline-block;
+    width: 30%;
+}
+
+.approche-img {
+    width: 30%;
+}
+
+.approche li {
+    list-style-type: "- ";
+}
