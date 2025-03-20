@@ -8,30 +8,31 @@
 }
 
 body {
+    font-size: 100%;
     margin: 0 auto;
     font-family: "Roboto";
 }
 
 h1 {
-    max-width: 50%;
+    max-width: 80%;
     text-align: center;
-    font-size: 64px;
+    font-size: 4em;
     text-transform: uppercase;
 }
 
 h2 {
     text-align: center;
-    font-size: 28px;
+    font-size: 1.75em;
     text-transform: uppercase;
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 1.5em;
     text-transform: uppercase;
 }
 
 h4 {
-    font-size: 24px;
+    font-size: 1.5em;
     text-transform: uppercase;
 }
 
@@ -55,8 +56,8 @@ a {
 .btn {
     min-width: 10rem;
     padding: 1rem;
-    border: solid 1px #FF4676;
-    border-radius: 2px;
+    border: solid 0.063rem #FF4676;
+    border-radius: 0.125rem;
     text-transform: uppercase;
     color: #FF4676;
     background-color: rgba(255, 255, 255, 0);
@@ -87,10 +88,11 @@ a {
 .heroe {
     background-image: url(../img/photo-1556139943-4bdca53adf1e\ 1.jpg);
     background-size: cover;
-    height: 50vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .btn-contact {
@@ -164,7 +166,7 @@ a {
 
 .accompagnement {
     width: 28vw;
-    height: 55vh;
+    max-height: 55vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -209,12 +211,13 @@ a {
 }
 
 .avi {
-    height: 82vh;
-    width: 22vw;
+    height: 90vh;
+    width: 25vw;
     padding: 3rem 1.5rem 1.5rem;
     border: solid 1px #68D8EE;
     z-index: -1;
     position: relative;
+    text-align: center;
 }
 
 #stephane::before {
@@ -271,7 +274,7 @@ a {
     display: flex;
     gap: 2rem;
     padding: 2rem 1.25rem;
-    border-bottom: solid 1px #68D8EE;
+    border-bottom: solid 0.06rem #68D8EE;
 }
 
 .blog-article {
@@ -295,7 +298,7 @@ footer {
     gap: 1rem;
 }
 .footer-contact {
-    border-left: solid 1px black;
+    border-left: solid 0.06rem black;
     padding-left: 1rem;
 }
 
@@ -306,6 +309,94 @@ footer {
     padding: 0rem 25% 1rem 25%;
 }
 .mentions li:not(:last-child) {
-    border-right: solid 1px black;
+    border-right: solid 0.06rem black;
     padding-right: 1rem;
+}
+/* Fin Section Footer */
+
+/* RESPONSIVE */
+
+
+@media screen and (max-width: 1120px){
+    .avis {
+        flex-direction: column;
+        align-items: center;
+    }
+    .avi {
+        width: 96%;
+        height: auto;
+        margin-top: 2rem;
+    }
+  
+    .accomp {
+        flex-direction: column;
+        align-items: center;
+    
+            }    
+    .accompagnement {
+        width: 96%;
+        margin-top: 2rem;
+    }
+    .avis {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    h1 {
+        font-size: 1.75em;
+    }
+    .header {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .approches {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .methode-general {
+        flex-direction: column;
+        align-items: center;
+              
+    }
+    .methode {
+        width: 96%;
+            }
+
+    .blog {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .footer-contact {
+        border-left:  0rem rgba(0, 0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .mentions {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    
+    }
+    .mentions li:not(:last-child) {
+        border-right:  0px rgba(0, 0, 0, 0);
+        padding-left: 0;
+    }
 }
