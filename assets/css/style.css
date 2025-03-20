@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Roboto";
-    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+    src: url(../fonts/Roboto/Roboto-Medium.ttf);
 }
 
 * {
@@ -13,6 +13,7 @@ body {
 }
 
 h1 {
+    max-width: 50%;
     text-align: center;
     font-size: 64px;
     text-transform: uppercase;
@@ -46,23 +47,25 @@ a {
     text-decoration: none;
 }
 
-p {
+.sous-titres {
     text-align: center;
+    padding-bottom: 2rem;
 }
 
 .btn {
-    padding: 0.5rem;
+    min-width: 10rem;
+    padding: 1rem;
     border: solid 1px #FF4676;
     border-radius: 2px;
     text-transform: uppercase;
     color: #FF4676;
     background-color: rgba(255, 255, 255, 0);
+    text-align: center;
 }
 
 /* Debut Header */
 .header {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 2rem 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -72,19 +75,26 @@ p {
     display: flex;
     gap: 1rem;
 }
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+}
 /* Fin Header */
 
 /* Debut Heroe */
 .heroe {
     background-image: url(../img/photo-1556139943-4bdca53adf1e\ 1.jpg);
     background-size: cover;
-    height: 40vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .btn-contact {
+    padding: 0.5rem;
     color: white;
     background-color: #FF4676;
 }
@@ -99,13 +109,203 @@ p {
 
 .approche {
     display: inline-block;
-    width: 30%;
+    width: 60%;
 }
 
 .approche-img {
-    width: 30%;
+    width: 60%;
 }
 
 .approche li {
     list-style-type: "- ";
+}
+
+/* Fin Section approche */
+.ligne {
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0;
+}
+/* Debut Section Methodes */
+ .methodes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .methode-general {
+    padding: 2rem 18vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 0.5rem;}
+ .methode {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;     
+}
+/* Fin Section Methodes */
+
+/* Debut Section accompagnements */
+.accompagnements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.accomp {
+    display: flex;
+    justify-content: center;
+}
+
+.accompagnement {
+    width: 28vw;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center; 
+}
+
+.accompagnement  h3 {
+    position: relative;
+}
+.accompagnement  h3::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    bottom: -0.5rem;
+    left: 51%;
+    right: 51%;
+    transform: translateX(-50%);
+    width: 16rem;
+    height: 1.3rem;
+}
+
+.talent h3::after {
+    background: #68D8EE;
+}
+.carriere h3::after {
+    background: #FFE17A;
+}
+.force h3::after {
+    background: #DB7CF2;
+}
+/* Fin Section Accompagnements */
+
+/* Debut Section Avis */
+.avis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 5rem 0 ;
+}
+
+.avi {
+    height: 82vh;
+    width: 22vw;
+    padding: 3rem 1.5rem 1.5rem;
+    border: solid 1px #68D8EE;
+    z-index: -1;
+    position: relative;
+}
+
+#stephane::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: auto;
+    top: -2.5rem;
+    left:50%;    
+    transform: translateX(-50%);
+    height: 5rem;
+    width: 5rem;
+    border: solid 0.5rem white;
+    border-radius: 50%;
+    background-image: url(../img/Mask\ Group.jpg);
+    background-size: cover;
+}
+
+#nicolas::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: auto;
+    top: -2.5rem;
+    left:50%;    
+    transform: translateX(-50%);
+    height: 5rem;
+    width: 5rem;
+    border: solid 0.5rem white;
+    border-radius: 50%;
+    background-image: url(../img/Mask\ Group-1.jpg);
+    background-size: cover;
+}
+
+#cecile::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: auto;
+    top: -2.5rem;
+    left:50%;    
+    transform: translateX(-50%);
+    height: 5rem;
+    width: 5rem;
+    border: solid 0.5rem white;
+    border-radius: 50%;
+    background-image: url(../img/Mask\ Group\ \(1\).jpg);
+    background-size: cover;
+}
+/* Fin Section Avis */
+
+/* Debut Section Blog */
+.blog {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem 1.25rem;
+    border-bottom: solid 1px #68D8EE;
+}
+
+.blog-article {
+    display: flex;
+    flex-direction: column;
+    align-items: start; 
+}
+/* Fin Section Blog */
+
+/* Debut Section Footer */
+footer {
+    margin-top:  2rem;
+    background-color:rgb(216, 210, 210);
+   
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 25% 1rem 25%;
+    gap: 1rem;
+}
+.footer-contact {
+    border-left: solid 1px black;
+    padding-left: 1rem;
+}
+
+.mentions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0rem 25% 1rem 25%;
+}
+.mentions li:not(:last-child) {
+    border-right: solid 1px black;
+    padding-right: 1rem;
 }
